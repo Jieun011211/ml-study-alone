@@ -23,3 +23,10 @@
     - transform(): 실제로 데이터를 변환
 - get_feature_names_out(): 각 특성의 조합에 대해 나열
 - 하이퍼파라미터: 사람이 알려줘야하는 파라미터(릿지의 alpha 등)
+- head(): 처음 5개 행을 출력하는 함수
+- unique(): 고유한 값을 추출하는 함수
+- predict_proba(): 클래스별 확률 값을 알려주는 함수
+- round(): 기본 소수점 첫째 자리에서 반올림하는 함수(decimals= 유지할 소수점 아래 자릿 수)
+- exp(): 지수 계산하는 함수
+- decision_function(): 로지스틱 회귀 모델이 학습한 방정식의 값 z
+- expit(): 시그모이드 함수
