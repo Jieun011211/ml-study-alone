@@ -32,3 +32,6 @@
 - expit(): 시그모이드 함수
 - info(): dataframe 의 각 열의 데이터 타입, 누락된 데이터를 확인하는 함수
 - describe(): 열에 대한 간략한 통계를 출력하는 함수
+- cross_validate(): 교차 검증 함수(기본: 5-폴드 교차 검증)
+- argmax(): 가장 큰 값의 인덱스 추출하는 함수
+- permutation_importance(): 히스토그램 기반 그레이디언트 부스팅의 특성 중요도를 계산하는 함수

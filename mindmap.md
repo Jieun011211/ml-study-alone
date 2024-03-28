@@ -84,6 +84,30 @@
             max_depth 매개변수로 최대 깊이를 지정
         특성 중요도
           feature_importances_불순도 감소에 기여한 정도
-      
-
+    교차 검증과 그리드 서치
+      교차 검증
+        훈련 세트를 여러 폴드로 나눈 후 한 폴드는 검증, 나머지는 훈련
+          cross_validate: 기본_5폴드교차검증
+          KFold 분할기
+      그리드 서치
+        GridSearchCV Class
+          최적의 하이퍼파라미터 탐색 자동화 도구
+        랜덤 서치
+          scipy.stats_uniform,randint
+            랜덤한 하이퍼파라미터 탐색
+              확률 분포 객체
+    트리의 앙상블
+      정형 데이터를 다루는 알고리즘
+        랜덤 포레스트_RandomForestClassifier
+          부트스트랩 샘플 사용
+          랜덤하게 일부 특성 선택
+        엑스트라 트리_ExtraTreesClassifier
+          부트스트랩 샘플 미사용
+          랜덤하게 노드 분할하여 과대적합을 감소
+        그레이디언트 부스팅_GradientBoostingClassifier
+          결정 트리를 연속적으로 추가하여 손실함수를 최소화
+          속도가 느리지만 좋은 성능
+        히스토그램 기반 그레이디언트 부스팅_HistGradientBoostingClassifier
+          그레이디언트 부스팅의 속도를 개선
+          안정적인 결과와 높은 성능으로 인기가 많은 알고리즘
 ```
