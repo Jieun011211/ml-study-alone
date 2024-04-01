@@ -37,3 +37,5 @@
 - permutation_importance(): 히스토그램 기반 그레이디언트 부스팅의 특성 중요도를 계산하는 함수
 - argsort(): 오름차순으로 나열하는 함수
 - mean(): 평균값 계산하는 함수
+- ratio 매개변수: figsize 지정, 기본값=1
+- inverse_transform(): transform() 메서드로 차원을 축소시킨 데이터를 복원
