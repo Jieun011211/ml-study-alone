@@ -41,3 +41,20 @@
 - inverse_transform(): transform() 메서드로 차원을 축소시킨 데이터를 복원
 - load_data(): keras fashion mnist 모듈 아래에서 사용하는 훈련, 테스트 데이터 분할하는 함수
 - evaluate(): 모델의 성능을 평가하는 함수
+- summary(): 층에 대한 유용한 정보
+- SGD: 기본 경사 하강법 옵티마이저 클래스
+    - learning_rate 매개변수: 학습률 지정 / 기본값 0.01
+    - momentum 매개변수: 0 이상 값 지정 -> 모멘텀 최적화를 수행
+    - nesterov 매개변수: True -> 네스테로프 모멘텀 최적화
+- Adagrad: Adargrad 옵티마이저 클래스
+    - learning_rate 매개변수: 학습률 지정 / 기본값 0.001
+    - 그레이디언트 제곱을 누적하여 학습률을 나눈다.
+        - initial_accumulator_value 매개변수: 누적 초깃값 지정 / 기본값 0.1
+- RMSprop: RMSprop 옵티마이저 클래스
+    - learning_rate 매개변수: 학습률 지정 / 기본값 0.001
+    - Adagrad 처럼 학습률을 나누지만 최근의 그레이디언트를 사용하기 위해 지수 감소를 사용
+        - rho 매개변수: 감소 비율을 지정 / 기본값 0.9
+- Adam: Adam 옵티마이저 클래스
+    - learning_rate 매개변수: 학습률 지정 / 기본값 0.001
+    - beta_1 매개변수: 모멘텀 최적화에 있는 그레이디언트의 지수 감소 평균 조절
+    - beta_2 매개변수: RMSprop 에 있는 그레이디언트 제곱의 지수 감소 평균 조절
