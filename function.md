@@ -39,3 +39,5 @@
 - mean(): 평균값 계산하는 함수
 - ratio 매개변수: figsize 지정, 기본값=1
 - inverse_transform(): transform() 메서드로 차원을 축소시킨 데이터를 복원
+- load_data(): keras fashion mnist 모듈 아래에서 사용하는 훈련, 테스트 데이터 분할하는 함수
+- evaluate(): 모델의 성능을 평가하는 함수
